@@ -1,0 +1,97 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f4f4f4;
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 120%;
+}
+
+h1 {
+  text-align: center;
+}
+
+.row {
+  width: 100%;
+}
+
+.cakes {
+  width: calc(33% - 20px);
+  background-color: pink;
+  float: left;
+  border: 1px solid #333333;
+  position: relative;
+  padding: 10px;
+  margin: 10px;
+}
+
+.cupcakes {
+  width: calc(33% - 20px);
+  background-color: pink;
+  float: left;
+  border: 1px solid #333333;
+  position: relative;
+  padding: 10px;
+  margin: 10px;
+}
+
+.tea {
+  width: calc(33% - 20px);
+  background-color: pink;
+  float: left;
+  border: 1px solid #333333;
+  position: relative;
+  padding: 10px;
+  margin: 10px;
+}
+
+#menu-title {
+  position: absolute;
+  top: -5px;
+  right: 10px;
+  color: #ffffff;
+  font-size: 100%;
+  padding: 10px
+}
+
+.cakes > #menu-title {
+  background-color: #D869FF;
+}
+
+.cupcakes > #menu-title {
+  background-color: #FF69B4;
+}
+
+.tea > #menu-title {
+  background-color: #76DAFF;
+}
+
+p {
+  padding: 10px;
+  margin-top: 50px;
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .cakes {
+    width: calc(50% - 20px);
+  }
+  .cupcakes {
+    width: calc(50% - 20px);
+  }
+  .tea {
+    width: calc(100% - 20px);
+  }
+}
+
+@media (max-width: 767px) {
+  .cakes {
+    width: calc(100% - 20px);
+  }
+  .cupcakes {
+    width: calc(100% - 20px);
+  }
+  .tea {
+    width: calc(100% - 20px);
+  }
+}
