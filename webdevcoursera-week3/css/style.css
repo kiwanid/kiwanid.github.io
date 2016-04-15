@@ -16,3 +16,7 @@
 .content {
   height: 1000px;
 }
+
+.container-fluid {
+  background: #f4f4f4;
+}
