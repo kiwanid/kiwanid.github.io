@@ -8,9 +8,10 @@
   margin: 20px;
 }
 
-.navbar-brand {
+.navbar-brand, .container {
   background: #f8f8f8;
 }
+
 
 /********** Extra small devices only **********/
 @media (max-width: 767px) {
