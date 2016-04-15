@@ -1,4 +1,17 @@
 
+.content {
+  height: 1000px;
+}
+
+.container-fluid {
+  background: #f4f4f4;
+  margin: 20px;
+}
+
+.navbar-brand {
+  background: #f8f8f8;
+}
+
 /********** Extra small devices only **********/
 @media (max-width: 767px) {
   /* Header */
@@ -13,11 +26,3 @@
 }
   /* End Header */
 
-.content {
-  height: 1000px;
-}
-
-.container-fluid {
-  background: #f4f4f4;
-  margin: 20px;
-}
