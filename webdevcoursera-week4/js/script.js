@@ -23,7 +23,7 @@ var menuItemsUrl =
 var menuItemsTitleHtml = "snippets/menu-items-title.html";
 var menuItemHtml = "snippets/menu-item.html";
 
-// Convenience function for inserting innerHTML for 'select'
+// Convenience function for inerting innerHTML for 'select'
 var insertHtml = function (selector, html) {
   var targetElem = document.querySelector(selector);
   targetElem.innerHTML = html;
@@ -68,14 +68,14 @@ document.addEventListener("DOMContentLoaded", function (event) {
 // to 
 // *** finish *** 
 // below.
-// We changed this code to retrieve all categories from the server instead of
+// We changed this code to retrieve all catgories from the server instead of
 // simply requesting home HTML snippet. We now also have another function
 // called buildAndShowHomeHTML that will receive all the categories from the server
 // and process them: choose random category, retrieve home HTML snippet, insert that
 // random category into the home HTML snippet, and then insert that snippet into our
 // main page (index.html).
 //
-// TODO: STEP 1: Substitute [...] below with the *value* of the function buildAndShowHomeHTML, 
+// TODO: STEP 1: Substtute [...] below with the *value* of the function buildAndShowHomeHTML, 
 // so it can be called when server responds with the categories data.
 
 // *** start ***
@@ -97,6 +97,8 @@ function buildAndShowHomeHTML (categories) {
   $ajaxUtils.sendGetRequest(
     homeHtmlUrl,
     function (homeHtml) {
+            document.querySelector("#main-content").innerHTML = homeHtml;
+
 
       // TODO: STEP 2: Here, call chooseRandomCategory, passing it retrieved 'categories'
       // Pay attention to what type of data that function returns vs what the chosenCategoryShortName
